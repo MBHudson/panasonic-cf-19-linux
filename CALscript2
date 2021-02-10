@@ -1,0 +1,21 @@
+sudo apt-get install xinput
+sudo apt-get install xinput-calibrator
+sudo apt install xserver-xorg-input-libinput xserver-xorg-input-evdev 
+sudo mkdir /etc/X11/xorg.conf.d
+ 
+sudo echo "
+# Panasonic Toughbook CF-19 touch screen calibration and long-press right-click feature
+# to obtain actual calibration values you need to install and run "xinput-calibrator"
+
+    Section "InputClass"
+	Identifier	"calibration"
+	MatchProduct	"Fujitsu Component USB Touch Panel"
+	Driver  "evdev" 
+	Option  "Calibration"   "1105 15681 611 15152"
+	Option	"SwapAxes"	"0"
+	Option	"EmulateThirdButton" "1"
+	Option	"EmulateThirdButtonTimeout" "650"
+	Option	"EmulateThirdButtonMoveThreshold" "50"
+EndSection " 
+
+            >> 99-calibration.conf
