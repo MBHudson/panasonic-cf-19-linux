@@ -1,0 +1,4 @@
+sudo apt-get install xinput
+sudo apt-get install xinput-calibrator
+sudo apt install xserver-xorg-input-libinput xserver-xorg-input-evdev 
+sudo apt-get install nautilus
