@@ -1,0 +1,23 @@
+ sudo nano /usr/share/pulseaudio/alsa-mixer/paths/analog-output-speaker.conf
+ 
+ 
+ Replace hese specifice setions with...
+ 
+ [Element Headphone]
+switch = off
+volume = merge
+override-map.1 = all
+override-map.2 = all-left,all-right
+
+and
+
+
+[Element Speaker]
+required-any = any
+switch = mute
+volume = off
+
+
+then reboot...
+
+-fixed-
