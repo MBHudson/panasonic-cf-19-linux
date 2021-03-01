@@ -1,5 +1,5 @@
 # Panasonic Toughbook CF-19 mk2-mk7
-### Kubuntu 20.04 LTS 2/2021
+### Kubuntu 21.04 3/2021
 ## Updated 2/1/21
 ### Sound Fix
 ### Screen Calibration Tweak
