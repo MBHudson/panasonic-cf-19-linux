@@ -4,6 +4,8 @@
 ### Sound Fix
 ### Screen Calibration Tweak
 ### Fingerprint Reader Driver
+# Other
+- No Password Sudo
 ## Improved Functionality:
 - touch screen calibration and long-press - right-click functionality
 - tablet-buttons driver (on-screen keyboard, enter, screen-rotation, lock buttons)
