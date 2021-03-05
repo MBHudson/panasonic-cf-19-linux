@@ -1,0 +1,15 @@
+/usr/share/X11/xorg.conf.d
+
+98-calibration.conf and 99-calibration.conf
+
+
+#Working but still needs some tweaks!
+Section "InputClass"
+        Identifier      "calibration"
+        MatchProduct    "Fujitsu Component USB Touch Panel"
+        Driver  "evdev"    
+        Option  "Calibration"   "1105 15681 611 15152"
+#        Option  "SwapXY"        "0" # unless it was already set to 1
+#        Option  "InvertX"       "0"  # unless it was already set
+#        Option  "InvertY"       "0"  # unless it was already set
+EndSection
